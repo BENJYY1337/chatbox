@@ -1,12 +1,17 @@
 import React from 'react'
 import './App.css'
-import Connexion from "./components/Connexion"
+import Formulaire from './components/Formulaire'
+import Message from './components/Message'
 
 const App = () => {
   return (
     <div className='box'>
-      <Connexion />
-      <h2>Titre</h2>
+      <div>
+        <div className="messages">
+          <Message />
+        </div>
+      </div>
+      <Formulaire />
     </div>
   )
 }

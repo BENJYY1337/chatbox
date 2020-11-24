@@ -25,7 +25,7 @@ const Connexion = () => {
             <button type='submit'>GO</button>
           </form>
         </div>
-        : <Redirect to={`/pseudo/${pseudo.name}`} />
+        : <Redirect push to={`/pseudo/${pseudo.name}`} />
       }
     </React.Fragment>
   )
