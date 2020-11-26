@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { render } from 'react-dom'
 import './App.css'
 import Formulaire from './components/Formulaire'
 import Message from './components/Message'
@@ -15,7 +16,7 @@ const App = (props) => {
   }
 
   return (
-    <div className='box'>
+    <div className='box' >
       <div>
         <div className="messages">
           <Message />
@@ -24,7 +25,7 @@ const App = (props) => {
         </div>
       </div>
       <Formulaire
-        length={140}
+        maxLength={140}
         pseudo={pseudo}
         addMessage={addMessage} />
     </div>
